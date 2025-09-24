@@ -61,11 +61,6 @@
   --ring: #71717a;
 }
 
-.duration-1000 {
-    animation-duration: 28s;
-    --tw-duration: 1s;
-    transition-duration: 1s;
-}
 
 @theme inline {
   --color-background: var(--background);
@@ -322,43 +317,53 @@
   }
   
   .float-gentle {
-    animation: float-gentle 24s ease-in-out infinite;
+    animation: float-gentle 6s ease-in-out infinite;
+    animation-duration: 6s;
   }
   
   .pulse-glow {
-    animation: pulse-glow 12s ease-in-out infinite;
+    animation: pulse-glow 3s ease-in-out infinite;
+    animation-duration: 3s;
   }
   
   .drift-left {
-    animation: drift-left 32s ease-in-out infinite;
+    animation: drift-left 8s ease-in-out infinite;
+    animation-duration: 8s;
   }
   
   .drift-right {
-    animation: drift-right 28s ease-in-out infinite;
+    animation: drift-right 7s ease-in-out infinite;
+    animation-duration: 7s;
   }
   
   .photo-sway-1 {
-    animation: photoSway1 96s ease-in-out infinite;
+    animation: photoSway1 8s ease-in-out infinite;
+    animation-duration: 8s;
   }
   
   .photo-sway-2 {
-    animation: photoSway2 112s ease-in-out infinite;
+    animation: photoSway2 9s ease-in-out infinite;
+    animation-duration: 9s;
   }
   
   .photo-sway-3 {
-    animation: photoSway3 88s ease-in-out infinite;
+    animation: photoSway3 7s ease-in-out infinite;
+    animation-duration: 7s;
   }
   
   .rope-sway {
-    animation: ropeSlackSway 96s ease-in-out infinite;
+    animation: ropeSlackSway 12s ease-in-out infinite;
+    animation-duration: 12s;
   }
   
   .film-scroll-animation {
     animation: 28s linear infinite filmScroll;
+    animation-duration: 28s;
   }
   
   .perforations-scroll-animation {
-    animation: perforationsScroll 960s linear infinite;
+    animation: perforationsScroll 28s linear infinite;
+    animation-duration: 28s;
   }
   
   /* Global animation slowdowns */
