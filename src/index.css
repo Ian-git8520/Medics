@@ -62,7 +62,7 @@
 }
 
 .duration-1000 {
-    animation-duration: unset;
+    animation-duration: 28s;
     --tw-duration: 1s;
     transition-duration: 1s;
 }
