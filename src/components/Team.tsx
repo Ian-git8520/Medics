@@ -1,13 +1,13 @@
 'use client'
 
 import { ImageWithFallback } from './figma/ImageWithFallback'
-import alexPhoto from '../assets/team-member-1.png'
-import nataliaPhoto from '../assets/team-member-2.png'
+import alexPhoto from '../assets/team-member-7.png'
+import nataliaPhoto from '../assets/team-member-6.png'
 import newAlexPhoto from '../assets/team-member-3.png'
 import ivanPhoto from '../assets/team-member-4.png'
-import eugenePhoto from '../assets/team-member-5.png'
-import marinaPhoto from '../assets/team-member-6.png'
-import vitoPhoto from '../assets/team-member-7.png'
+import eugenePhoto from '../assets/team-member-1.png'
+import marinaPhoto from '../assets/team-member-2.png'
+import vitoPhoto from '../assets/team-member-5.png'
 
 export function Team() {
   const wantedCriminals = [
