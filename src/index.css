@@ -61,6 +61,12 @@
   --ring: #71717a;
 }
 
+.duration-1000 {
+    animation-duration: unset;
+    --tw-duration: 1s;
+    transition-duration: 1s;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
