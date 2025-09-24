@@ -332,27 +332,27 @@
   }
   
   .photo-sway-1 {
-    animation: photoSway1 24s ease-in-out infinite;
+    animation: photoSway1 48s ease-in-out infinite;
   }
   
   .photo-sway-2 {
-    animation: photoSway2 28s ease-in-out infinite;
+    animation: photoSway2 56s ease-in-out infinite;
   }
   
   .photo-sway-3 {
-    animation: photoSway3 22s ease-in-out infinite;
+    animation: photoSway3 44s ease-in-out infinite;
   }
   
   .rope-sway {
-    animation: ropeSlackSway 24s ease-in-out infinite;
+    animation: ropeSlackSway 48s ease-in-out infinite;
   }
   
   .film-scroll-animation {
-    animation: filmScroll 120s linear infinite;
+    animation: filmScroll 240s linear infinite;
   }
   
   .perforations-scroll-animation {
-    animation: perforationsScroll 120s linear infinite;
+    animation: perforationsScroll 240s linear infinite;
   }
   
   /* Clean scrollbar */

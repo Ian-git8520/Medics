@@ -418,8 +418,7 @@ export function Services() {
                   }`}
                    style={{
                      transitionDelay: `${(index + 3) * 200 + 800}ms`,
-                     animationDelay: `${index * 1.5 + 3}s`,
-                     animationDuration: index === 0 ? '192s' : index === 1 ? '224s' : '256s'
+                     animationDelay: `${index * 1.5 + 3}s`
                    }}
                   onMouseEnter={() => setHoveredPhoto(service.id)}
                   onMouseLeave={() => setHoveredPhoto(null)}
