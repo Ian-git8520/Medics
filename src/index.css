@@ -348,7 +348,7 @@
   }
   
   .film-scroll-animation {
-    animation: filmScroll 960s linear infinite;
+    animation: 28s linear infinite filmScroll;
   }
   
   .perforations-scroll-animation {
