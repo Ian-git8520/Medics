@@ -5,7 +5,7 @@ import onirosAward from '../assets/oniros-award.png'
 import nyifaAward from '../assets/nyifa-award.png'
 import beyondBorderAward from '../assets/beyond-border-award.png'
 import topShortsAward from '../assets/top-shorts-award.png'
-import newLaurelAward from '../assets/oniros-award.png'
+import newLaurelAward from '../assets/new-laurel-award.png'
 import veniceAiAward from '../assets/venice-ai-award.png'
 
 export function Awards() {
