@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-const onirosAward = 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=150&h=150&fit=crop'
-const nyifaAward = 'https://images.unsplash.com/photo-1588392382834-a891154bca4d?w=150&h=150&fit=crop'
-const beyondBorderAward = 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=150&h=150&fit=crop'
-const topShortsAward = 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=150&h=150&fit=crop'
-const newLaurelAward = 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=150&h=150&fit=crop'
-const veniceAiAward = 'https://images.unsplash.com/photo-1588392382834-a891154bca4d?w=150&h=150&fit=crop'
+import onirosAward from '../assets/oniros-award.png'
+import nyifaAward from '../assets/nyifa-award.png'
+import beyondBorderAward from '../assets/beyond-border-award.png'
+import topShortsAward from '../assets/top-shorts-award.png'
+import newLaurelAward from '../assets/oniros-award.png'
+import veniceAiAward from '../assets/venice-ai-award.png'
 
 export function Awards() {
   const awards = [
