@@ -1,37 +1,37 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import globalCinemaAward from '../assets/global-cinema-award.png'
-import digitalArtsAward from '../assets/digital-arts-award.png'
-import futureMediaAward from '../assets/future-media-award.png'
-import creativeVisionAward from '../assets/creative-vision-award.png'
-import nextGenAward from '../assets/next-gen-award.png'
-import revolutionaryCinemaAward from '../assets/revolutionary-cinema-award.png'
+import minimalBestFilm from '../assets/minimal-best-film.png'
+import minimalAudienceChoice from '../assets/minimal-audience-choice.png'
+import minimalInnovation from '../assets/minimal-innovation.png'
+import minimalDirectorsChoice from '../assets/minimal-directors-choice.png'
+import minimalExcellence from '../assets/minimal-excellence.png'
+import minimalRisingTalent from '../assets/minimal-rising-talent.png'
 
 export function Awards() {
   const awards = [
     {
-      image: globalCinemaAward,
+      image: minimalBestFilm,
       delay: "0s"
     },
     {
-      image: digitalArtsAward,
+      image: minimalAudienceChoice,
       delay: "0.5s"
     },
     {
-      image: futureMediaAward,
+      image: minimalInnovation,
       delay: "1s"
     },
     {
-      image: creativeVisionAward,
+      image: minimalDirectorsChoice,
       delay: "1.5s"
     },
     {
-      image: nextGenAward,
+      image: minimalExcellence,
       delay: "2s"
     },
     {
-      image: revolutionaryCinemaAward,
+      image: minimalRisingTalent,
       delay: "2.5s"
     }
   ]
