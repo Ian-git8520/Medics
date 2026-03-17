@@ -1,39 +1,55 @@
-import { Hero } from './components/Hero'
-import { Portfolio } from './components/Portfolio'
-import { Awards } from './components/Awards'
-import { About } from './components/About'
-import { Services } from './components/Services'
-import { Team } from './components/Team'
-import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Toaster } from '@/components/ui/sonner';
+import { AuthProvider } from '@/contexts/AuthContext';
+import Landing from '@/pages/Landing';
+import Auth from '@/pages/Auth';
+import Dashboard from '@/pages/Dashboard';
+import ProtectedRoute from '@/components/ProtectedRoute';
+
+// Gym pages
+import HealthMonitor from '@/pages/gym/HealthMonitor';
+import GymAssist from '@/pages/gym/GymAssist';
+import Guidelines from '@/pages/gym/Guidelines';
+import GymFinder from '@/pages/gym/GymFinder';
+import FitnessPlan from '@/pages/gym/FitnessPlan';
+import GymCommunity from '@/pages/gym/GymCommunity';
+
+// Notes pages
+import Courses from '@/pages/notes/Courses';
+import NotesPage from '@/pages/notes/NotesPage';
+import UnitQuestions from '@/pages/notes/UnitQuestions';
+import Practicals from '@/pages/notes/Practicals';
+import Schedule from '@/pages/notes/Schedule';
+import NotesCommunity from '@/pages/notes/NotesCommunity';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground" style={{ overflow: 'visible' }}>
-      <main className="relative" role="main" style={{ overflow: 'visible' }}>
-        <section id="hero" aria-label="Hero section">
-          <Hero />
-        </section>
-        <section id="portfolio" aria-label="Portfolio section">
-          <Portfolio />
-        </section>
-        <section id="awards" aria-label="Awards section">
-          <Awards />
-        </section>
-        <section id="about" aria-label="About section">
-          <About />
-        </section>
-        <section id="services" aria-label="Services section">
-          <Services />
-        </section>
-        <section id="team" aria-label="Team section" style={{ overflow: 'visible', height: 'auto', minHeight: '0', maxHeight: 'none' }}>
-          <Team />
-        </section>
-        <section id="contact" aria-label="Contact section">
-          <Contact />
-        </section>
-      </main>
-      <Footer />
-    </div>
-  )
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/auth" element={<Auth />} />
+          
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            {/* Gym routes */}
+            <Route path="/gym/health-monitor" element={<HealthMonitor />} />
+            <Route path="/gym/assist" element={<GymAssist />} />
+            <Route path="/gym/guidelines" element={<Guidelines />} />
+            <Route path="/gym/finder" element={<GymFinder />} />
+            <Route path="/gym/fitness-plan" element={<FitnessPlan />} />
+            <Route path="/gym/community" element={<GymCommunity />} />
+            {/* Notes routes */}
+            <Route path="/notes/courses" element={<Courses />} />
+            <Route path="/notes/notes" element={<NotesPage />} />
+            <Route path="/notes/questions" element={<UnitQuestions />} />
+            <Route path="/notes/practicals" element={<Practicals />} />
+            <Route path="/notes/schedule" element={<Schedule />} />
+            <Route path="/notes/community" element={<NotesCommunity />} />
+          </Route>
+        </Routes>
+        <Toaster />
+      </AuthProvider>
+    </BrowserRouter>
+  );
 }
